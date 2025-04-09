@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -12,16 +13,12 @@
             padding: 20px;
             text-align: center;
         }
-        
+
         .cta {
             background-color: #ec3430;
             padding: 20px;
             text-align: center;
-        }
-
-        .product {
-            background-color: #f9dd71;
-            padding: 20px;
+            position: relative;
         }
 
         .cta-button {
@@ -36,6 +33,64 @@
         .cta-button:hover {
             background-color: #ff4500;
         }
+
+        /* إضافة صورة بدون خلفية على خلفية حمراء */
+        .cta .cta-image {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            background-image: url('images/taco-icon.png'); /* تأكد من وضع الصورة في المسار المناسب */
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        .product {
+            background-color: #f9dd71;
+            padding: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-button {
+            background-color: #4CAF50;
+            padding: 12px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .menu-button:hover {
+            background-color: #45a049;
+        }
+
+        /* زر "اتصل بنا" */
+        .contact-button {
+            background-color: #4CAF50;
+            padding: 12px 25px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-button:hover {
+            background-color: #45a049;
+        }
+
     </style>
 </head>
 <body>
@@ -77,9 +132,19 @@
 
     <!-- Call to Action Section -->
     <section class="cta">
+        <div class="cta-image"></div> <!-- الصورة على الخلفية الحمراء -->
         <h2>اطلب طاكوس كفتة السمك الآن!</h2>
         <p>احصل على توصيل سريع إلى باب منزلك واستمتع بتجربة فريدة.</p>
         <a href="https://wa.me/212661740854?text=أرغب في طلب طاكوس كفتة السمك!" class="cta-button">اطلب الآن</a>
+
+        <!-- زر لزيارة MENU -->
+        <a href="menu.html" class="menu-button">اكتشف المزيد في قائمتنا</a>
+        <p>اطلع على المأكولات الأخرى واستمتع بتجربة جديدة في كل مرة.</p>
+    </section>
+
+    <!-- زر "اتصل بنا" -->
+    <section class="contact">
+        <a href="tel:+212680082111" class="contact-button">اتصل بنا: 06 8008 2111</a>
     </section>
 
     <!-- Footer Section -->
