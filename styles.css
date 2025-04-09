@@ -8,107 +8,149 @@
 /* Body and overall styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff5e6; /* خلفية ناعمة بلون يشبه الصفر البرتقالي */
     color: #333;
     text-align: center;
+    line-height: 1.6;
 }
 
 /* Header Section */
 header {
-    background-color: #2a9d8f;
+    background-color: #efb911; /* خلفية جديدة بلون أصفر مائل للذهبي */
     color: white;
-    padding: 50px 20px;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 4px solid #e76f51; /* لون قريب من الأحمر في الصورة */
 }
 
 header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 header p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 /* Product Section */
 .product {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 50px 20px;
+    gap: 50px;
 }
 
 .product-info {
-    max-width: 50%;
+    max-width: 500px;
     text-align: left;
+    margin-top: 30px;
 }
 
 .product-info h2 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
+    color: #2a9d8f; /* اللون الأخضر الداكن الموجود في الشعار */
 }
 
 .product-info ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .product-info li {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #555;
 }
 
+/* Product Image */
 .product-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #e9c46a;
-    padding: 40px 20px;
+    background-color: #f9dd71; /* خلفية جديدة باللون الأصفر الفاتح */
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .testimonials h3 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #264653; /* اللون الأزرق الداكن الموجود في الشعار */
 }
 
 .testimonials blockquote {
     font-size: 18px;
-    margin-bottom: 10px;
     font-style: italic;
+    margin-bottom: 10px;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Call to Action Section */
 .cta {
-    background-color: #e76f51;
+    background-color: #ec3430; /* خلفية جديدة باللون الأحمر القوي */
     color: white;
-    padding: 50px 20px;
+    padding: 70px 20px;
+    text-align: center;
 }
 
 .cta h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.cta p {
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 .cta-button {
-    font-size: 20px;
+    font-size: 22px;
     color: white;
-    background-color: #264653;
-    padding: 15px 30px;
+    background-color: #264653; /* اللون الأزرق الداكن */
+    padding: 15px 40px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    border: none;
 }
 
 .cta-button:hover {
-    background-color: #1d3557;
+    background-color: #2a9d8f; /* اللون الأخضر الداكن */
 }
 
 /* Footer Section */
 footer {
-    background-color: #2a9d8f;
+    background-color: #ec3430; /* نفس اللون الأحمر القوي */
     color: white;
     padding: 20px;
     font-size: 16px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
 }
