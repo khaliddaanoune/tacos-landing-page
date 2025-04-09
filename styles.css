@@ -1,0 +1,114 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Product Section */
+.product {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.product-info {
+    max-width: 50%;
+    text-align: left;
+}
+
+.product-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-info ul {
+    list-style-type: none;
+}
+
+.product-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #e9c46a;
+    padding: 40px 20px;
+}
+
+.testimonials h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #e76f51;
+    color: white;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    font-size: 20px;
+    color: white;
+    background-color: #264653;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #1d3557;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
