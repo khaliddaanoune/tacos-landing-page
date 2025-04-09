@@ -16,7 +16,7 @@ body {
 
 /* Header Section */
 header {
-    background-color: #f4a261; /* اللون البرتقالي - مناسب للصورة */
+    background-color: #efb911; /* خلفية جديدة بلون أصفر مائل للذهبي */
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -76,7 +76,7 @@ header p {
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #e9c46a; /* الأصفر في الصورة */
+    background-color: #f9dd71; /* خلفية جديدة باللون الأصفر الفاتح */
     padding: 60px 20px;
     text-align: center;
 }
@@ -99,7 +99,7 @@ header p {
 
 /* Call to Action Section */
 .cta {
-    background-color: #e76f51; /* اللون الأحمر البرتقالي */
+    background-color: #ec3430; /* خلفية جديدة باللون الأحمر القوي */
     color: white;
     padding: 70px 20px;
     text-align: center;
@@ -132,7 +132,7 @@ header p {
 
 /* Footer Section */
 footer {
-    background-color: #e76f51; /* نفس اللون الأحمر البرتقالي */
+    background-color: #ec3430; /* نفس اللون الأحمر القوي */
     color: white;
     padding: 20px;
     font-size: 16px;
