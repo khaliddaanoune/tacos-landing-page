@@ -8,7 +8,7 @@
 /* Body and overall styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff5e6; /* لون خلفية مناسب للصورة */
     color: #333;
     text-align: center;
     line-height: 1.6;
@@ -16,11 +16,11 @@ body {
 
 /* Header Section */
 header {
-    background-color: #2a9d8f;
+    background-color: #f4a261; /* لون قريب من الأحمر في الصورة */
     color: white;
     padding: 80px 20px;
     text-align: center;
-    border-bottom: 4px solid #264653;
+    border-bottom: 4px solid #e76f51; /* لون متناسق مع الصورة */
 }
 
 header h1 {
@@ -52,7 +52,7 @@ header p {
 .product-info h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #2a9d8f;
+    color: #2a9d8f; /* لون متناسق مع العنوان */
 }
 
 .product-info ul {
@@ -76,7 +76,7 @@ header p {
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #e9c46a;
+    background-color: #e9c46a; /* لون أصفر مشابه للصورة */
     padding: 60px 20px;
     text-align: center;
 }
@@ -99,7 +99,7 @@ header p {
 
 /* Call to Action Section */
 .cta {
-    background-color: #e76f51;
+    background-color: #e76f51; /* لون متناسق مع الصورة */
     color: white;
     padding: 70px 20px;
     text-align: center;
@@ -132,7 +132,7 @@ header p {
 
 /* Footer Section */
 footer {
-    background-color: #2a9d8f;
+    background-color: #e76f51; /* نفس اللون كخلفية مناسبة */
     color: white;
     padding: 20px;
     font-size: 16px;
