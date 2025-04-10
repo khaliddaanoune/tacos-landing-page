@@ -1,160 +1,181 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طاكوس كفتة الحوت</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* تخصيص الألوان والخلفيات حسب طلبك */
-        header {
-            background-color: #efb911;
-            padding: 20px;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>طاكوس كفتة الحوت</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    header {
+      background-color: #efb911;
+      padding: 20px;
+      text-align: center;
+    }
 
-        .cta {
-            background-color: #ec3430;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            direction: rtl; /* لتحريك الكتابة لليمين */
-        }
+    .cta {
+      background-color: #ec3430;
+      padding: 20px;
+      text-align: center;
+      direction: rtl;
+    }
 
-        .cta-button {
-            background-color: #fff;
-            padding: 10px 20px;
-            color: #ec3430;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+    .cta-button {
+      background-color: #fff;
+      padding: 10px 20px;
+      color: #ec3430;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
 
-        .cta-button:hover {
-            background-color: #ff4500;
-        }
+    .cta-button:hover {
+      background-color: #ff4500;
+    }
 
-        /* تكبير الصورة على الخلفية الحمراء */
-        .cta .cta-image {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            width: 150px; /* تم تكبير الصورة */
-            height: 150px;
-            background-image: url('images/taco-icon.png'); /* تأكد من وضع الصورة في المسار المناسب */
-            background-size: contain;
-            background-repeat: no-repeat;
-            z-index: 1;
-        }
+    .cta-image-box {
+      margin: 20px 0;
+    }
 
-        .product {
-            background-color: #f9dd71;
-            padding: 20px;
-        }
+    .cta-image-box img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
 
-        .product-image img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 8px;
-        }
+    .product {
+      background-color: #f9dd71;
+      padding: 20px;
+    }
 
-        /* زر "اكتشف المزيد في قائمتنا" في الأسفل */
-        .menu-button {
-            background-color: #4CAF50;
-            padding: 12px 25px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-size: 18px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .product-image img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
 
-        .menu-button:hover {
-            background-color: #45a049;
-        }
+    .menu-button {
+      background-color: #4CAF50;
+      padding: 12px 25px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 18px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-        /* زر "اتصل بنا" - تصغير الزر */
-        .contact-button {
-            background-color: #4CAF50;
-            padding: 8px 20px; /* تم تصغير الحجم */
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-size: 16px; /* تم تصغير الخط */
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: auto; /* تم ضبط عرض الزر بشكل مناسب */
-        }
+    .menu-button:hover {
+      background-color: #45a049;
+    }
 
-        .contact-button:hover {
-            background-color: #45a049;
-        }
+    .contact-button {
+      background-color: #4CAF50;
+      padding: 8px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 16px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+    }
 
-    </style>
+    .contact-button:hover {
+      background-color: #45a049;
+    }
+
+    .extra-image {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .extra-image img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .extra-image h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>طاكوس كفتة الحوت: فكرتنا الجديدة اللي غادي تحيرك! جربها اليوم وعيش التجربة المدهشة</h1>
-        <p>جرب طاكوس كفتة الحوت، الفكرة الجديدة اللي غادي تغيّر كل توقعاتك! طعم لذيذ وغني، مع مكونات مبتكرة وخليط مثالي بين النكهة والجودة. مع كل قضمة، غادي تحس بأنك تعيش تجربة فريدة ومثيرة. ما تفوتهاش، جربها دابا قبل ما تكون آخر من يعرفها</p>
-        
-        <!-- زر طلب إضافي تحت العنوان -->
-        <a href="https://wa.me/212661740854?text=أرغب في طلب طاكوس كفتة السمك!" class="cta-button">اطلب الآن</a>
-    </header>
 
-    <!-- Product Section -->
-    <section class="product">
-        <div class="product-info">
-            <h2>لماذا طاكوس كفتة السمك من مطعمنا؟</h2>
-            <ul>
-                <li>طاكوس كفتة السمك من مطعمنا هو الاختيار الأمثل لكل من يحب التميز والمذاق الفريد</li>
-                <li>نحن نستخدم أفضل أنواع السمك الطازج، مما يضمن لك طعماً لا مثيل له في كل لقمة</li>
-                <li>التوابل الخاصة بنا تعطي طاكوس كفتة السمك نكهة مميزة، تجمع بين الحموضة والنعومة في توازن مثالي</li>
-                <li>فكرة جديدة ومبتكرة، فنحن نقدم لك طاكوس مختلف يعكس جودة المكونات وإبداع الطهاة</li>
-                <li>نحرص على أن تكون كل مكوناتنا طازجة وبعناية فائقة، لتستمتع بتجربة طعام لا تنسى</li>
-                <li>مع طاكوس كفتة السمك، نحن نقدم لك تجربة غير تقليدية تجمع بين الابتكار والمذاق الذي لا يُقاوم</li>
-            </ul>
-        </div>
-        <div class="product-image">
-            <!-- استخدام رابط صورة في مجلد سيتم تحديثه لاحقًا -->
-            <img src="images/tacos.jpg" alt="طاكوس كفتة السمك">
-        </div>
-    </section>
+  <!-- Header -->
+  <header>
+    <h1>طاكوس كفتة الحوت: فكرتنا الجديدة اللي غادي تحيرك! جربها اليوم وعيش التجربة المدهشة</h1>
+    <p>
+      جرب طاكوس كفتة الحوت، الفكرة الجديدة اللي غادي تغيّر كل توقعاتك! طعم لذيذ وغني، مع مكونات مبتكرة وخليط مثالي بين النكهة والجودة. مع كل قضمة، غادي تحس بأنك تعيش تجربة فريدة ومثيرة. ما تفوتهاش، جربها دابا قبل ما تكون آخر من يعرفها
+    </p>
+    <a href="https://wa.me/212661740854?text=أرغب في طلب طاكوس كفتة السمك!" class="cta-button">اطلب الآن</a>
+  </header>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h3>آراء عملائنا</h3>
-        <blockquote>"أول مرة نجرب طاكوس كفتة الحوت من عندكم، والله غير كان ممتاز! طعمه مزيان والمكونات طازجة."– أحمد</blockquote>
-        <blockquote>"نصيحة للمحترفين: جربوا طاكوس كفتة السمك مع الصوص الخاص، لا يمكن مقاومته!" – سارة</blockquote>
-        <blockquote>"طاكوس كفتة الحوت ديالكم أحسن حاجة جربتها! طعم جديد ويميزكم عن أي مكان آخر."– سعيد</blockquote>
-    </section>
+  <!-- Product -->
+  <section class="product">
+    <div class="product-info">
+      <h2>لماذا طاكوس كفتة السمك من مطعمنا؟</h2>
+      <ul>
+        <li>طاكوس كفتة السمك من مطعمنا هو الاختيار الأمثل لكل من يحب التميز والمذاق الفريد</li>
+        <li>نحن نستخدم أفضل أنواع السمك الطازج، مما يضمن لك طعماً لا مثيل له في كل لقمة</li>
+        <li>التوابل الخاصة بنا تعطي طاكوس كفتة السمك نكهة مميزة، تجمع بين الحموضة والنعومة في توازن مثالي</li>
+        <li>فكرة جديدة ومبتكرة، فنحن نقدم لك طاكوس مختلف يعكس جودة المكونات وإبداع الطهاة</li>
+        <li>نحرص على أن تكون كل مكوناتنا طازجة وبعناية فائقة، لتستمتع بتجربة طعام لا تنسى</li>
+        <li>مع طاكوس كفتة السمك، نحن نقدم لك تجربة غير تقليدية تجمع بين الابتكار والمذاق الذي لا يُقاوم</li>
+      </ul>
+    </div>
+    <div class="product-image">
+      <img src="images/tacos.jpg" alt="طاكوس كفتة السمك" />
+    </div>
+  </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta">
-        <div class="cta-image"></div> <!-- الصورة على الخلفية الحمراء -->
-        <h2>اطلب طاكوس كفتة السمك الآن!</h2>
-        <p>احصل على توصيل سريع إلى باب منزلك واستمتع بتجربة فريدة.</p>
-        <a href="https://wa.me/212661740854?text=أرغب في طلب طاكوس كفتة السمك!" class="cta-button">اطلب الآن</a>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h3>آراء عملائنا</h3>
+    <blockquote>"أول مرة نجرب طاكوس كفتة الحوت من عندكم، والله غير كان ممتاز! طعمه مزيان والمكونات طازجة." – أحمد</blockquote>
+    <blockquote>"نصيحة للمحترفين: جربوا طاكوس كفتة السمك مع الصوص الخاص، لا يمكن مقاومته!" – سارة</blockquote>
+    <blockquote>"طاكوس كفتة الحوت ديالكم أحسن حاجة جربتها! طعم جديد ويميزكم عن أي مكان آخر." – سعيد</blockquote>
+  </section>
 
-        <!-- زر لزيارة MENU -->
-        <a href="https://leport.ma/menu/" class="menu-button">اكتشف المزيد في قائمتنا</a>
-        <p>اطلع على المأكولات الأخرى واستمتع بتجربة جديدة في كل مرة.</p>
-    </section>
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>اطلب طاكوس كفتة السمك الآن!</h2>
+    <p>احصل على توصيل سريع إلى باب منزلك واستمتع بتجربة فريدة.</p>
+    <a href="https://wa.me/212661740854?text=أرغب في طلب طاكوس كفتة السمك!" class="cta-button">اطلب الآن</a>
 
-    <!-- زر "اتصل بنا" -->
-    <section class="contact">
-        <a href="tel:+212680082111" class="contact-button">اتصل بنا  0680082111</a>
-    </section>
+    <!-- صورة مكررة -->
+    <div class="cta-image-box">
+      <img src="images/tacos.jpg" alt="طاكوس كفتة السمك" />
+    </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>مفتوح طوال الأسبوع، من الساعة 12 ظهرًا حتى 11 مساءً. توصيل سريع خلال أقل من 30 دقيقة.</p>
-    </footer>
+    <!-- زر القائمة -->
+    <a href="https://leport.ma/menu/" class="menu-button">اكتشف المزيد في قائمتنا</a>
+    <p>اطلع على المأكولات الأخرى واستمتع بتجربة جديدة في كل مرة.</p>
+  </section>
+
+  <!-- اتصل بنا -->
+  <section class="contact">
+    <a href="tel:+212680082111" class="contact-button">اتصل بنا: 06 80082111</a>
+  </section>
+
+  <!-- صورة إضافية -->
+  <section class="extra-image">
+    <h3>عرض خاص لهذا الأسبوع – اكتشف نكهات جديدة لا تُقاوم!</h3>
+    <img src="images/extra-banner.jpg" alt="عرض خاص أو إعلان" />
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>مفتوح طوال الأسبوع، من الساعة 12 ظهرًا حتى 11 مساءً. توصيل سريع خلال أقل من 30 دقيقة.</p>
+  </footer>
 </body>
 </html>
